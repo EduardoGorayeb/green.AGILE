@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/index.css">
+    <link rel="shortcut icon" href="_img/green-agile.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div id="caixa-fale-conosco">
+        <i class="bi bi-x-lg" id="fechar" onclick="fecharFaleConosco()"></i>
+        <form method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required oninput="inputNome()">
+            <span id="avisoNome">O nome precisa ter no mínimo 3 caracteres.</span>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required oninput="inputEmail()">
+            <span id="avisoEmail">Digite um e-mail válido.</span>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" required oninput="inputTelefone()">
+            <span id="avisoTelefone">Insira um número de telefone válido.</span>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" required></textarea>
+
+            <div id="botoes">
+                <input type="submit">
+                <button type="button" onclick="gerarJson()">Gerar JSON</button>
+            </div>
+        </form>
+    </div>
+    <nav>
+        <p>(17) 98057-1032</p>
+        <p id="fale-conosco" onclick="abrirFaleConosco()">Fale Conosco</p>
+        <div id="div-logos">
+            <a href="https://wa.me/17980571032" target="_blank"><img src="_img/whatsapp.png" alt="Logo do Whatsapp"></a>
+            <a href="https://ig.me/m/green.agile" target="_blank"><img src="_img/instagram.png" alt="Logo do Instagram" id="logo-insta"></a>
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="_img/face.png" alt="Logo do Facebook"></a>
+        </div>
+    </nav>
+    <header>
+        <img src="_img/logo-green-agile.png" alt="Logo da empresa green.AGILE.">
+        <div id="navegacao">
+            <a href="index.html">Home</a>
+            <a href="sobrenos.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="galeria.html">Galeria de Imagens</a>
+        </div>
+        <div id="login-cadastro">
+            <button id="login"><a href="login.html">Login</a></button>
+            <button id="cadastro"><a href="cadastro.html">Cadastrar-se</a></button>
+        </div>
+    </header>
+    <main>
+        <div id="carrossel">
+            <div id="encaminhar-sobrenos">
+                <img src="_img/logo-green-agile.png" alt="Logo da empresa green.AGILE.">
+                <p>Na green.AGILE, acreditamos que as plantas transformam ambientes, melhoram a qualidade de vida e trazem equilíbrio ao nosso cotidiano. Somos especializados em soluções de jardinagem e plantas para todos os tipos de espaços – seja sua casa, escritório ou empresa. Nosso compromisso é oferecer um serviço ágil, prático e personalizado, sempre com a sustentabilidade em mente.</p>
+                <button><a href="sobrenos.html"><i class="bi bi-person-fill"></i>Sobre Nós</a></button>
+            </div>
+            <div id="imagens-carrossel">
+                <img src="_img/img1-landing.png" alt="Image 1">
+                <img src="_img/img2-landing.jpg" alt="Image 2">
+                <img src="_img/img3-landing.png" alt="Image 3">
+                <img src="_img/img4-landing.png" alt="Image 4">
+                <img src="_img/img1-landing.png" alt="Image 1 Clone">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="_img/logo-green-agile.png" alt="Logo da empresa green.AGILE">
+        <div id="informacoes-footer">
+            <p>Atendimento: De Segunda-Feira à Sábado - das 8h às 17h</p>
+            <p id="direitos">Todos os direitos reservados © - green.AGILE 2024</p>
+        </div>
+        <p id="e-mail">faleconosco.green.agile@gmail.com</p>
+    </footer>
+
+    <script src="_js/index.js"></script>
+</body>
+</html>

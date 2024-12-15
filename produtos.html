@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/produtos.css">
+    <link rel="shortcut icon" href="_img/green-agile.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="_js/produtos.js"></script>
+    <title>Produtos</title>
+</head>
+<body>
+    <div id="caixa-fale-conosco">
+        <i class="bi bi-x-lg" id="fechar" onclick="fecharFaleConosco()"></i>
+        <form method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required oninput="inputNome()">
+            <span id="avisoNome">O nome precisa ter no mínimo 3 caracteres.</span>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required oninput="inputEmail()">
+            <span id="avisoEmail">Digite um e-mail válido.</span>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" required oninput="inputTelefone()">
+            <span id="avisoTelefone">Insira um número de telefone válido.</span>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" required></textarea>
+
+            <div id="botoes">
+                <input type="submit">
+                <button type="button" onclick="gerarJson()">Gerar JSON</button>
+            </div>
+        </form>
+    </div>
+    <nav>
+        <p>(17) 98057-1032</p>
+        <p id="fale-conosco" onclick="abrirFaleConosco()">Fale Conosco</p>
+        <div id="div-logos">
+            <a href="https://wa.me/17980571032" target="_blank"><img src="_img/whatsapp.png" alt="Logo do Whatsapp"></a>
+            <a href="https://ig.me/m/green.agile" target="_blank"><img src="_img/instagram.png" alt="Logo do Instagram" id="logo-insta"></a>
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="_img/face.png" alt="Logo do Facebook"></a>
+        </div>
+    </nav>
+    <header>
+        <img src="_img/logo-green-agile.png" alt="Logo da empresa green.AGILE.">
+        <div id="navegacao">
+            <a href="index.html">Home</a>
+            <a href="sobrenos.html">Sobre Nós</a>
+            <a>Produtos</a>
+            <a href="galeria.html">Galeria de Imagens</a>
+        </div>
+        <div id="login-cadastro">
+            <button id="login"><a href="login.html">Login</a></button>
+            <button id="cadastro"><a href="cadastro.html">Cadastrar-se</a></button>
+        </div>
+    </header>
+    <aside id="aside1"></aside>
+    <main>
+        <h1 id="titulo">PRODUTOS</h1>
+        <p>Apenas informativo, não é possível realizar compras no site. Para comprar ligue no telefone informado ou vá até a loja física.</p>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/imagem01Produtos (1).png">
+            <p><br>Philodendron</p>
+            <p>R$159,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img02.png">
+            <p><br>Monstera</p>
+            <p>R$599,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/imagem03.png">
+            <p><br>Jibóia</p>
+            <p>R$89,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img04.png">
+            <p><br>Philodendron Laranja</p>
+            <p>R$249,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img05.png">
+            <p><br>Dólar</p>
+            <p>R$24,99</p>
+        </div>
+        <!-- SEGUNDA FILEIRA -->
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img06.png">
+            <p><br>Comigo-Ninguém-Pode</p>
+            <p>R$119,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img07.png">
+            <p><br>Suculenta</p>
+            <p>R$49,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img08.png">
+            <p><br>Samambaia</p>
+            <p>R$69,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img09.png">
+            <p><br>Peperômia</p>
+            <p>R$99,99</p>
+        </div>
+        <div class="DIVimagens">
+            <img id="imagem01" src="_img/img10.png">
+            <p><br>Lírio Laranja</p>
+            <p>R$39,99</p>
+        </div>
+        <br>
+        
+    </main>
+    <aside id="aside2"></aside>
+    <footer>
+        <img src="_img/logo-green-agile.png" alt="Logo da empresa green.AGILE">
+        <div id="informacoes-footer">
+            <p>Atendimento: De Segunda-Feira à Sábado - das 8h às 17h</p>
+            <p id="direitos">Todos os direitos reservados © - green.AGILE 2024</p>
+        </div>
+        <p id="e-mail">faleconosco.green.agile@gmail.com</p>
+    </footer>
+</body>
+</html>

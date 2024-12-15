@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/cadastro.css">
+    <link rel="shortcut icon" href="_img/green-agile.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="_js/cadastro.js"></script>
+    <title>Cadastrar-se</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><i class="bi bi-arrow-left"></i>Home</a>
+        <img src="_img/logo-green-agile.png" alt="Logo da empresa green.AGILE.">
+        <button><a href="login.html">Login</a></button>
+    </header>
+    <aside id="aside1"></aside>
+    <main>
+        <div id="cadastro">
+            <form action="" method="get">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required oninput="inputNome()">
+                <span id="avisoNome">O nome precisa ter no mínimo 3 caracteres.</span>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required oninput="inputEmail()">
+                <span id="avisoEmail">Digite um e-mail válido.</span>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required oninput="inputSenha()">
+                <span id="avisoSenha"></span>
+
+                <label for="senha2">Confirme a senha:</label>
+                <input type="password" name="senha2" id="senha2" required oninput="confirmaSenha()">
+                <span id="avisoSenha2">As senhas não coincidem.</span>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" required oninput="inputTelefone()">
+                <span id="avisoTelefone">Insira um número de telefone válido.</span>
+
+                <input type="submit" value="Cadastrar-se">
+            </form>
+        </div>
+        <div id="login">
+            <p>Já possui cadastro?</p>
+            <button><a href="login.html">Login</a></button>
+        </div>
+    </main>
+    <aside id="aside2"></aside>
+    <footer>
+        <img src="_img/logo-green-agile.png" alt="Logo da empresa green.AGILE">
+        <div id="informacoes-footer">
+            <p>Atendimento: De Segunda-Feira à Sábado - das 8h às 17h</p>
+            <p id="direitos">Todos os direitos reservados © - green.AGILE 2024</p>
+        </div>
+        <p id="e-mail">faleconosco.green.agile@gmail.com</p>
+    </footer>
+</body>
+</html>
